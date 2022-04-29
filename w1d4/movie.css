@@ -1,15 +1,17 @@
 /* This assignment is about CSS and HTML for layout, positioning, and the CSS box model. The CSS file contains*/
 /*Body properties and values */
 body{
+    background: url('../images/background.png');
     font-family: Verdana,Tahoma, sans-serif;
     font-size: 8pt;
-    /* background-image: url(WAP all projects/Robel921.github.io/MovieReview/images/background.png); */
+    /* background-image: url(WAP all projects/Hselam4.github.io/MovieReview/images/background.png); */
     margin: 0px;
     padding: 0px;
+    color: black;
 }
 #topBanner{
     text-align: center;
-    /* background-image: url(WAP all projects/Robel921.github.io/MovieReview/images/bannerbg.png); */
+    /* background-image: url(WAP all projects/Hselam4.github.io/MovieReview/images/bannerbg.png); */
 }
 h1{
     text-align: center;
@@ -49,7 +51,7 @@ ul{
     width: 264px;
 }
 #posterHeader{
-    /* background-image: url(WAP all projects/Robel921.github.io/MovieReview/images/rbg.png); */
+    /* background-image: url(WAP all projects/Hselam4.github.io/MovieReview/images/rbg.png); */
     font-size: 48pt;
     color: red;
     font-weight: bold;
