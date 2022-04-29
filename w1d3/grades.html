@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retrieve Grade</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>Retrieve My Grade</h1>
+    <form id="student-form" action="http://mumstudents.org/params.php" method="post">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" value=""> <br>
+        <label for="id">Student ID:</label>
+        <input type="text" id="id" name="id" value="">
+        <div id="entry">
+            <label>
+                <input type="radio" value="1" name="entry">
+                February
+            </label>
+            <label>
+                <input type="radio" value="2" name="entry">
+                August
+            </label>
+            <label>
+                <input type="radio" value="2" name="entry">
+                December
+            </label>
+            <label>
+                <input type="radio" value="2" name="entry">
+                November
+            </label>
+        </div>
+        <label for="course">Select Course:</label>
+        <select name="course" id="course">
+            <option value=""></option>
+            <option value="CS472">CS472 - Web Programming</option>
+            <option value="CS401">CS401 - Modern Programming Practices</option>
+            <option value="CS435">CS435	- Algorithms</option>
+            <option value="CS525">CS525	- Advanced Software Development</option>
+            <option value="CS544">	CS544 - Enterprise Architecture</option>
+        </select>
+        <br>
+        <input type="checkbox" id="consent" name="consent" value="1">
+        <label for="consent">I promise to use use this form only to look in to my account </label>
+        <br>
+        <input type="submit" value="Get Grade">
+    </form>
+</body>
+</html>
