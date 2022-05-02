@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Exercises</title>
+</head>
+<body>
+<h1>Javascript Exercise</h1>
+
+<pre>
+    <b>1. What is the difference between the following 2 statements?</b>
+    setTimeout(booyah, 2000);
+    setTimeout(booyah(), 2000);
+</pre>
+<p>
+    <b>Answer:</b>
+    In the first statement booyah is going to be called after 2000 ms.
+    In the second statement booyah will be called imediately. 
+    function test() {console.log('test')}
+    setInterval(test,1000)
+
+</p>
+<pre>
+    <b>2. What do the following 2 alerts display (answer without running the code)?</b>
+    var myfunc = function(a, x) {
+     return a * x;
+    };
+    var x = myfunc(2, 3);
+    var y = myfunc;
+    alert(x);
+    alert(y(2,3));
+</pre>
+<p>
+    <b>Answer:</b>
+    Both of them will give a result of 6. 
+    alert(x); will give us 6. 
+    alert(y(2,3)); will give us 6. 
+
+</p>
+<pre>
+    <b>3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+    says “BOOYAH!”</b>
+    setTimeout(booyah1, 2000);
+    setTimeout(booyah2(), 2000);
+</pre>
+<pre>
+    <b>Answer:</b>
+   a. function booyah1() {
+        alert('BOOYAH!')
+    }
+
+   b. function booyah2(){
+        return function(){
+        alert("BOOYAH!");
+        };
+    }
+       
+    let booyah2 = new function () {
+        alert('BOOYAH!')
+    }
+    function testQuestion3() {
+        setTimeout(booyah1, 2000);
+        setTimeout(booyah2(), 2000);
+    }
+</pre>
+<pre>
+    <b>4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?</b>
+</pre>
+<pre>
+    <b>Answer:</b>
+ Unobtrusive Javascript is used to write javascript as a separate file from HTML file or 
+documentation.
+and the practical application of Unobtrusive Javascript (and the reasons for using it) promotes separation of web page content 
+into three different concerns which are content (HTML), presentation (CSS), and 
+behavior(JS). We don’t need to write JS code inside HTML.
+Main reason is the sepration of concepts:content (html), presentation (css) and behavior (js).
+    -It is using for separation of HTML and JS usages. For example, when we define a buttons onclick action outside of html tag
+     scope this will be unobtrusive usage. This concept is using for code separation, clean global scope and usability improvement.
+</pre>
+</body>
+</html>
