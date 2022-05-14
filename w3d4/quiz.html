@@ -1,0 +1,52 @@
+<!-- <form action="http://localhost:8080/quiz">
+<div><h1>The Number Quiz</h1>
+    <input type="hidden" id="quiz" value=""/>
+    <input type="hidden" id="score" value=""/>
+    <p>Guess the next number in the sequence.</p>
+    <p>Your answer:<input type="text"></p>
+    <input type="submit" name="Submit" >
+</div>
+</form> -->
+<html>
+<head>
+  <title>Express HTML</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin:100px;">
+   
+  <!-- <div class="container">
+    <a class="navbar-brand" href="/">Express HTML</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/sitemap">Sitemap</a>
+      </li>
+    </ul>
+  </div> -->
+
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h2 >The Number Quiz</h2>
+      <h5>Your current score is 0</h5>
+      <h5>Guess the next number in the sequence</h5>
+      
+
+      <form action="/question2">
+        <label for="fname">Your answer:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>
