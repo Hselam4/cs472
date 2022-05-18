@@ -1,0 +1,1 @@
+select word from entries WHERE word ='A';
